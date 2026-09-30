@@ -675,6 +675,184 @@ const CURRICULUM = [
     ],
     speaking_prompt: "Look back over 16 weeks of learning. What has been the most useful thing you've learned? What are your goals for the next 3 months?",
     scenario: { type: "reflection", title: "Final speaking assessment", setup: "Evaluación final oral. Da un discurso de 3 minutos en inglés sobre ti mismo: tu trabajo, tu pasión por la tecnología, tus aventuras en autocaravana y tus planes de futuro. Intenta usar la mayor variedad posible de estructuras." }
+  },
+
+  // WEEKS 17-20: PREVENTIVE MEDICINE — VACCINATION CLINIC
+  {
+    week: 17, title: "Vaccine Clinic: Reviewing Vaccination History",
+    category: "prevention",
+    color: "#059669",
+    icon: "📋",
+    phrases: [
+      "Do you have your vaccination record with you?", "Could I see your vaccination card, please?",
+      "Which vaccines have you had in the past?", "When was your last tetanus jab?",
+      "Have you ever had a bad reaction to a vaccine?", "Are you allergic to anything — food, medicines or latex?",
+      "Are you feeling unwell today?", "Have you had a fever in the last few days?",
+      "Are you pregnant, or is there any chance you could be?", "Are you taking any medication at the moment?",
+      "Do you have any condition that affects your immune system?", "I can't find that dose in our records.",
+      "Let me check your records on the system.", "You're up to date with your vaccines.",
+      "You're missing one dose of this vaccine.", "Do you remember roughly when you had it?",
+      "Did you have it here or in another country?", "Do you work with patients?",
+      "Today we can give you this vaccine.", "I'll update your record after the vaccine."
+    ],
+    vocabulary: [
+      { word: "vaccination record", def: "cartilla / registro de vacunación" },
+      { word: "immunisation", def: "inmunización" },
+      { word: "dose", def: "dosis" },
+      { word: "booster", def: "dosis de recuerdo" },
+      { word: "schedule", def: "calendario / pauta" },
+      { word: "up to date", def: "al día" },
+      { word: "overdue", def: "pendiente / atrasado" },
+      { word: "contraindication", def: "contraindicación" },
+      { word: "precaution", def: "precaución" },
+      { word: "immunocompromised", def: "inmunodeprimido" },
+      { word: "serology", def: "serología" },
+      { word: "antibody levels", def: "niveles de anticuerpos" },
+      { word: "catch-up", def: "pauta de actualización / rescate" },
+      { word: "risk group", def: "grupo de riesgo" },
+      { word: "eligible", def: "candidato / que cumple criterios" }
+    ],
+    grammar: [
+      { title: "Present Perfect for vaccination history", explanation: "Para preguntar por vacunas pasadas sin fecha concreta usa Present Perfect ('Have you ever had…?', 'Have you had your flu jab this year?'). Cuando el paciente da una fecha concreta, la respuesta pasa a Past Simple.", example: "Have you ever had the hepatitis B vaccine? / Yes, I had it in 2019." },
+      { title: "Yes/No questions with do / are / have", explanation: "En español preguntamos solo con la entonación ('¿Tiene alergias?'). En inglés necesitas un auxiliar delante del sujeto: do/does para verbos normales, are/is con 'be', have con Present Perfect. Es el error más típico en las preguntas de cribado.", example: "Do you have any allergies? / Are you feeling well today? / Have you had a fever recently?" },
+      { title: "Asking about time: When / How long ago / the last time", explanation: "'When…?' pide una fecha. 'How long ago…?' pide cuánto tiempo ha pasado. 'When was the last time…?' sirve para la última dosis. Útil cuando el paciente no trae la cartilla.", example: "When was your last tetanus jab? / How long ago did you have it? / When was the last time you had a booster?" },
+      { title: "'Any' in questions and negatives", explanation: "Usa 'any' en preguntas y frases negativas con sustantivos en plural o incontables. 'Some' se usa en frases afirmativas. En el cribado de vacunas casi todas las preguntas llevan 'any'.", example: "Do you have any allergies? / I don't take any medication. / I have some questions." },
+      { title: "Asking sensitive questions tactfully", explanation: "Preguntas como el embarazo o la inmunodepresión pueden resultar incómodas. Suavízalas con 'Could I ask…', 'Is there any chance…' o explicando el motivo: 'I need to ask this before any vaccine'.", example: "I need to ask everyone this: is there any chance you could be pregnant? / Could I ask if you have any problems with your immune system?" }
+    ],
+    speaking_prompt: "Explain in English how a vaccination appointment works in your preventive medicine unit, from the moment the patient arrives until they leave.",
+    scenario: { type: "vaccine_screening", title: "Pre-vaccination screening", setup: "Un paciente angloparlante llega a la consulta de vacunas sin su cartilla. Revisa qué vacunas recuerda haber recibido, hazle las preguntas de cribado (alergias, fiebre, embarazo, medicación, problemas de inmunidad) y explícale qué vacuna se puede poner hoy. Todo en inglés. (El profesor hará de paciente.)" }
+  },
+  {
+    week: 18, title: "Giving Vaccines: Consent & Procedure",
+    category: "prevention",
+    color: "#0D9488",
+    icon: "💉",
+    phrases: [
+      "Today you're getting the flu vaccine.", "This vaccine protects you against…",
+      "Do you have any questions before we start?", "Are you happy to go ahead?",
+      "Which arm would you prefer?", "Are you right- or left-handed?",
+      "Could you roll up your sleeve, please?", "Please sit down and relax your arm.",
+      "You'll feel a small scratch.", "Try to keep your arm still.",
+      "That's it — all done.", "Press gently on the cotton wool for a minute.",
+      "Would you like a plaster?", "We're giving you two vaccines today, one in each arm.",
+      "Do you tend to feel faint with needles?", "Let me know if you feel dizzy.",
+      "Would you prefer to lie down?", "Take a deep breath and breathe out slowly.",
+      "Please wait in the waiting room for 15 minutes.", "I'm just writing down the batch number."
+    ],
+    vocabulary: [
+      { word: "jab", def: "pinchazo / vacuna (informal, UK)" },
+      { word: "injection site", def: "zona de punción" },
+      { word: "intramuscular", def: "intramuscular" },
+      { word: "subcutaneous", def: "subcutáneo" },
+      { word: "deltoid", def: "deltoides" },
+      { word: "needle", def: "aguja" },
+      { word: "syringe", def: "jeringa" },
+      { word: "sleeve", def: "manga" },
+      { word: "plaster", def: "tirita" },
+      { word: "cotton wool", def: "algodón" },
+      { word: "batch number", def: "número de lote" },
+      { word: "expiry date", def: "fecha de caducidad" },
+      { word: "cold chain", def: "cadena de frío" },
+      { word: "to faint", def: "desmayarse" },
+      { word: "verbal consent", def: "consentimiento verbal" }
+    ],
+    grammar: [
+      { title: "'Will' to say what the patient will feel", explanation: "Usa 'will' ('ll) para anticipar lo que va a notar el paciente. Anticipar la sensación reduce la ansiedad y es muy natural en inglés clínico.", example: "You'll feel a small scratch. / It'll only take a second. / You won't feel much." },
+      { title: "'Be going to' for what you are about to do", explanation: "Usa 'going to' para anunciar lo que ya has decidido hacer ahora mismo. Explicar cada paso antes de hacerlo es buena práctica con pacientes que no conocen el sistema.", example: "I'm going to clean your arm first. / I'm going to give you the vaccine in your left arm." },
+      { title: "Softening instructions: could / just / please", explanation: "Un imperativo seco ('Roll up your sleeve') puede sonar brusco en inglés. Suavízalo con 'Could you…?', 'just' o 'please'. 'Just' indica que es algo rápido y sencillo.", example: "Could you roll up your sleeve, please? / Just relax your arm. / Just a moment, please." },
+      { title: "Offering choices: Would you like / Would you prefer", explanation: "'Would you like…?' ofrece algo. 'Would you prefer…?' pide elegir entre opciones. Implicar al paciente en pequeñas decisiones (brazo, tumbarse) aumenta la confianza.", example: "Would you like a plaster? / Would you prefer your left or right arm? / Would you prefer to lie down?" },
+      { title: "No obligation: don't need to / don't have to", explanation: "'Don't need to' y 'don't have to' indican que algo NO es necesario (no es una prohibición). Muy útiles para tranquilizar. Ojo: 'mustn't' significa prohibición, no 'no hace falta'.", example: "You don't need to take your shirt off. / You don't have to fast before the vaccine. / You mustn't rub the area hard." }
+    ],
+    speaking_prompt: "Explain to a patient which vaccine they are getting today, why it is recommended for them, and what you are going to do, step by step.",
+    scenario: { type: "vaccine_administration", title: "Vaccinating a nervous patient", setup: "Un paciente angloparlante con miedo a las agujas viene a vacunarse. Explícale qué vacuna le vas a poner y para qué sirve, pide su consentimiento verbal, tranquilízale durante la técnica e indícale que debe esperar en la sala después. Habla en inglés. (El profesor hará de paciente.)" }
+  },
+  {
+    week: 19, title: "After the Vaccine: Side Effects & Reactions",
+    category: "prevention",
+    color: "#16A34A",
+    icon: "🩹",
+    phrases: [
+      "Your arm might feel sore for a day or two.", "Some people get a mild fever afterwards.",
+      "You may feel tired or have a headache.", "These side effects usually go away on their own.",
+      "You can take paracetamol if you need to.", "Put a cold compress on your arm if it's swollen.",
+      "Keep moving your arm — it helps with the soreness.", "If you feel unwell, come back or call us.",
+      "How are you feeling now?", "Do you feel dizzy or sick?",
+      "Do you have any itching or a rash?", "Are you having any trouble breathing?",
+      "Tell me straight away if your throat feels tight.", "Lie down and I'll raise your legs.",
+      "I'm calling for help now.", "This is a normal reaction — there's nothing to worry about.",
+      "We'll keep an eye on you for a bit longer.", "We'll report this reaction.",
+      "Seek medical attention if it gets worse.", "Here's a leaflet with all the information."
+    ],
+    vocabulary: [
+      { word: "side effect", def: "efecto secundario" },
+      { word: "adverse reaction", def: "reacción adversa" },
+      { word: "soreness", def: "dolor (a la palpación)" },
+      { word: "swelling", def: "hinchazón" },
+      { word: "redness", def: "enrojecimiento" },
+      { word: "rash", def: "erupción / sarpullido" },
+      { word: "hives", def: "urticaria / ronchas" },
+      { word: "itching", def: "picor" },
+      { word: "light-headed", def: "mareado / aturdido" },
+      { word: "shortness of breath", def: "falta de aire / disnea" },
+      { word: "adrenaline", def: "adrenalina" },
+      { word: "observation period", def: "periodo de observación" },
+      { word: "leaflet", def: "folleto informativo" },
+      { word: "cold compress", def: "compresa fría" },
+      { word: "to report", def: "notificar" }
+    ],
+    grammar: [
+      { title: "Probability: may / might / could", explanation: "Para hablar de efectos secundarios posibles, no seguros, usa may, might o could + infinitivo. Transmite la información con honestidad sin alarmar al paciente.", example: "Your arm might feel sore. / You may have a mild fever. / It could feel a bit stiff tomorrow." },
+      { title: "First conditional for aftercare advice", explanation: "If + presente → imperativo o will. Es la estructura típica para dar instrucciones al alta: si pasa X, haz Y.", example: "If your arm gets red and swollen, put a cold compress on it. / If you feel unwell, call us. / If it gets worse, you'll need to see a doctor." },
+      { title: "Frequency words to explain risk", explanation: "Usually, often, sometimes, rarely y very rarely ayudan a explicar cuánto de frecuente es un efecto. Van antes del verbo principal y después de 'be'.", example: "Side effects are usually mild. / Some people sometimes feel tired. / Serious reactions are very rare." },
+      { title: "Present continuous for symptoms right now", explanation: "Para preguntar o describir lo que el paciente nota en este momento usa Present Continuous. Es clave durante el periodo de observación.", example: "Are you feeling dizzy? / My neck is itching. / Is it getting worse?" },
+      { title: "Urgency: straight away / immediately / as soon as", explanation: "'Straight away' e 'immediately' significan 'inmediatamente'. 'As soon as' + presente significa 'en cuanto'. Útiles para indicar cuándo pedir ayuda.", example: "Tell me straight away if you feel unwell. / Call 112 immediately if you can't breathe. / Come back as soon as you notice a rash." }
+    ],
+    speaking_prompt: "Explain the common side effects of a vaccine to a patient, what they can do at home, and when they should seek medical help.",
+    scenario: { type: "vaccine_reaction", title: "Reaction in the waiting room", setup: "Una paciente angloparlante, 10 minutos después de vacunarse, dice que se siente mareada y que le pica el cuello. Pregúntale por sus síntomas, valora cómo está y comunícate con claridad y calma. Todo en inglés. (El profesor hará de paciente.)" }
+  },
+  {
+    week: 20, title: "Appointments, Follow-up & Travel Vaccines",
+    category: "prevention",
+    color: "#0891B2",
+    icon: "📅",
+    phrases: [
+      "You'll need another dose in a few weeks.", "Let's book your next appointment.",
+      "Does next Tuesday at ten suit you?", "Is morning or afternoon better for you?",
+      "I'll write the date on your card.", "You'll get a reminder by text message.",
+      "If you can't make it, please call to cancel.", "Please bring your vaccination card next time.",
+      "You missed your last appointment — shall we rebook it?", "That's the last dose of the schedule.",
+      "You won't need another dose for now.", "When are you travelling?",
+      "Which countries are you visiting?", "Some vaccines need to be given weeks before you travel.",
+      "Could you spell your surname, please?", "What's your date of birth?",
+      "Could I have a contact phone number?", "Let me just double-check the date.",
+      "So that's Thursday the twelfth at half past nine.", "Is there anything else I can help you with?"
+    ],
+    vocabulary: [
+      { word: "appointment", def: "cita" },
+      { word: "to book", def: "reservar / citar" },
+      { word: "to reschedule", def: "cambiar la cita" },
+      { word: "to cancel", def: "anular" },
+      { word: "reminder", def: "recordatorio" },
+      { word: "availability", def: "disponibilidad" },
+      { word: "slot", def: "hueco (en la agenda)" },
+      { word: "follow-up", def: "seguimiento" },
+      { word: "second dose", def: "segunda dosis" },
+      { word: "surname", def: "apellido" },
+      { word: "date of birth", def: "fecha de nacimiento" },
+      { word: "no-show", def: "paciente que no acude a la cita" },
+      { word: "waiting list", def: "lista de espera" },
+      { word: "certificate", def: "certificado" },
+      { word: "travel clinic", def: "consulta del viajero" }
+    ],
+    grammar: [
+      { title: "Prepositions of time: at / on / in", explanation: "'At' para horas (at 10:30), 'on' para días y fechas (on Monday, on the 12th), 'in' para meses, años y partes del día (in March, in the morning). Excepción: 'at night', 'at the weekend'.", example: "Your appointment is on Tuesday at 10:30. / You'll need the next dose in March." },
+      { title: "Saying dates and times", explanation: "Las fechas usan ordinales: 'the twelfth of March' o 'March the twelfth'. Para la hora: 'half past nine' (9:30), 'quarter to ten' (9:45), 'quarter past ten' (10:15). Repetir la fecha en voz alta evita errores.", example: "So that's Thursday the twelfth at half past nine. / Is the twenty-first OK for you?" },
+      { title: "Suggesting options: How about / Would … suit you / Shall we", explanation: "Estas estructuras proponen una fecha de forma amable sin imponerla. 'Shall we…?' propone hacer algo juntos.", example: "How about Monday morning? / Would Wednesday at eleven suit you? / Shall we book it now?" },
+      { title: "Present continuous vs will for future plans", explanation: "Present Continuous para citas ya fijadas ('You're coming back on the 5th'). 'Will' para decisiones o promesas en el momento ('I'll send you a reminder').", example: "You're coming back on the fifth of May. / I'll write it on your card. / We'll call you if anything changes." },
+      { title: "Checking information: spelling and question tags", explanation: "Para confirmar datos pide deletrear ('Could you spell that?') y usa question tags: afirmación + auxiliar negativo ('…, isn't it?'). Sirven para comprobar sin sonar a interrogatorio.", example: "Could you spell your surname, please? / Your date of birth is the third of June, isn't it? / You're travelling in August, aren't you?" }
+    ],
+    speaking_prompt: "Book a follow-up appointment for a patient who needs another dose: agree on a date and time, confirm their details and explain what they need to bring.",
+    scenario: { type: "appointment_booking", title: "Rescheduling a dose by phone", setup: "Un paciente angloparlante llama por teléfono porque no puede venir a su cita para la siguiente dosis. Busca una nueva fecha y hora, confirma sus datos (nombre, fecha de nacimiento, teléfono) y recuérdale qué debe traer. Todo en inglés. (El profesor hará de paciente.)" }
   }
 ];
 
@@ -682,7 +860,8 @@ const CATEGORIES = {
   general: { label: "Inglés General", color: "#3B82F6", bg: "#EFF6FF" },
   health: { label: "Sanidad y Medicina", color: "#EF4444", bg: "#FEF2F2" },
   travel: { label: "Viajes y Autocaravana", color: "#F97316", bg: "#FFF7ED" },
-  advanced: { label: "B2 Avanzado", color: "#7C3AED", bg: "#F5F3FF" }
+  advanced: { label: "B2 Avanzado", color: "#7C3AED", bg: "#F5F3FF" },
+  prevention: { label: "Medicina Preventiva · Vacunas", color: "#059669", bg: "#ECFDF5" }
 };
 
 // ─── SPEECH UTILITIES ────────────────────────────────────────────────────────
@@ -763,6 +942,8 @@ const saveApiKey = (key) => {
 };
 
 // ─── API CALL ─────────────────────────────────────────────────────────────────
+const CLAUDE_MODEL = "claude-sonnet-5-5";
+
 const callClaude = async (messages, systemPrompt) => {
   const apiKey = loadApiKey();
   if (!apiKey) throw new Error("NO_API_KEY");
@@ -775,7 +956,7 @@ const callClaude = async (messages, systemPrompt) => {
       "anthropic-dangerous-direct-browser-access": "true"
     },
     body: JSON.stringify({
-      model: "claude-sonnet-4-6",
+      model: CLAUDE_MODEL,
       max_tokens: 1000,
       system: systemPrompt,
       messages
@@ -1934,13 +2115,13 @@ export default function App() {
           )}
 
           <p style={{ fontSize: 13, opacity: 0.9, margin: "8px 0 16px", lineHeight: 1.6 }}>
-            16 semanas · Sanidad · Autocaravana · Habla con audio · IA integrada
+            {CURRICULUM.length} módulos · Sanidad · Vacunas · Autocaravana · Habla con audio · IA integrada
           </p>
 
           {/* Progress stats */}
           <div style={{ display: "flex", gap: 10 }}>
             {[
-              { label: "Semanas", value: `${completedWeeks}/16`, icon: "📅" },
+              { label: "Módulos", value: `${completedWeeks}/${CURRICULUM.length}`, icon: "📅" },
               { label: "Quiz pts.", value: totalScore, icon: "⭐" },
               { label: "Nivel objetivo", value: "B2", icon: "🎯" }
             ].map((s, i) => (
